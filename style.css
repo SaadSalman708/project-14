@@ -1,0 +1,159 @@
+* {
+    font-family: Geomanist, Helvetica, sans-serif;
+    border: 1px solid;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* header Starts here */
+
+header section, main, footer section {
+    padding: 0 17%;
+}
+
+header {
+    border-bottom: 1px solid lightgrey;
+}
+
+.header-one {
+    background-color: #ebf1ff;
+    height: 64px;
+}
+
+#olx-white-bg {
+    top: -12px;
+    left: -18px;
+    background: white;
+    padding: 28px 40px 30px 38px;
+    border-radius: 25% 25% 0 0;
+}
+
+.header-one img {
+    width: 42px;
+}
+
+#property-logo {
+    width: 36px;
+}
+
+.header-one-sell-button img {
+    width: 90px;
+}
+
+.header-one-sell-button p {
+    top: 20px;
+}
+.header-one p {
+    top: 7px;
+    left: 25px;
+}
+
+/* 
+.header-one-sell-button p::before {
+    content: url(assets/asset\ 3.svg);
+    font-size: 0.1ch;
+} */
+
+.section-top, .section-top a {
+    margin-right: 1ch;
+}
+
+
+
+/* hero2 Starts from here */
+
+.hero2 div {
+    width: 120px;
+    height: 116px;
+    text-align: center;
+}
+
+.hero2 img {
+    width: 88px;
+    height: 88px;
+}
+
+
+
+/* Footer Starts from here */
+
+footer section div span {
+    color: #3a77ff;
+}
+
+footer section .half-mobile-image img {
+    width: 50%;
+    margin: 8% 0 0 40%;
+}
+
+/* Footer Section #1 Starts from here */
+
+.f-s1 {
+    background-color: rgba(0, 47, 52, .03);
+}
+
+.f-s1-store-logo{
+    height: 2.5rem;
+}
+
+
+/* Footer Section #2 Starts from here */
+
+.f-s2 {
+    background-color: #f2f4f5;
+    border-top: 1px solid #d8dfe0;
+    padding-bottom: 3%;
+}
+
+.f-s2 div {
+    flex: 1;
+    line-height: 2rem;
+}
+
+.f-s2 h3 {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 25% 0 4% 0;
+}
+
+.f-s2-div5 img:hover {
+    opacity: 60%;
+}
+
+
+/* Footer Section #2 Starts from here */
+
+.f-s3 {
+    background-color: #002f34;
+    color: white;
+    padding: 1% 16% 0.1% 0;
+}
+
+
+
+/* back to top button */
+
+.navigate-top-btn {
+    background-color: white;
+    bottom: 6rem;
+    right: 3rem;
+    border: 1.2px solid;
+    border-radius: 24px;
+    padding: 0.4rem 1.5rem;
+}
+
+.navigate-top-btn:hover {
+    border: 3px solid;
+    bottom: 5.9rem;
+    right: 2.9rem;
+}
+
+.navigate-top-btn:active {
+    color: white;
+    background-color: black;
+}
