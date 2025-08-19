@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone OLX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -12,38 +15,40 @@
 
 <body>
     <!-- header Starts from here -->
-    <header class="position-sticky top-0 z-3">
+    <header class="w-100 position-sticky top-0 z-3">
+
         <!-- upper header Starts from here -->
-        <section class="header-one d-flex justify-content-between align-items-center py-2">
+        <section class="w-100 header-one d-flex justify-content-between align-items-center py-2">
             <nav class="d-flex gap-4 align-items-center position-relative">
                 <a href="#">
-                    <div id="olx-white-bg" class="position-absolute z-5"></div><img class="z-1 position-relative"
-                        src="assets/asset 25.svg" alt="OLX">
+                    <div id="olx-white-bg" class="position-absolute z-5"></div>
+                    <img class="z-1 position-relative" src="assets/asset 25.svg" alt="OLX">
                 </a>
                 <a href="#">
-                    <div>
+                    <div class="text-center ms-2">
                         <img src="assets/asset 0.png">
                         <span class="fw-bolder fs-6">Motors</span>
                     </div>
                 </a>
                 <a href="#">
-                    <div>
+                    <div class="text-center">
                         <img id="property-logo" src="assets/asset 1.png">
                         <span class="fw-bolder fs-6">Property</span>
                     </div>
                 </a>
             </nav>
 
-            <nav>
+            <nav class="d-flex align-items-center gap-md-3 gap-lg-3">
                 <a herf="#" class="text-decoration-underline">Login</a>
                 <a href="#" type="button" class="header-one-sell-button align-items-center">
                     <div class="position-relative">
                         <img src="assets/asset 2.svg">
-                        <p class="position-absolute">sell</p>
+                        <p class="position-absolute fw-bold">sell</p>
                     </div>
                 </a>
             </nav>
         </section>
+        <!-- upper header Ends here -->
 
         <!-- bottom header Starts from here -->
         <section class="header-two d-flex justify-content-between align-items-center gap-3 py-3 bg-white">
@@ -61,32 +66,39 @@
                     id="button-addon2">Search</button>
             </div>
         </section>
+        <!-- bottom header Ends here -->
     </header>
-    <!-- header Ends from here -->
+    <!-- header Ends here -->
 
 
 
     <!-- main Starts from here -->
     <main>
         <!-- main's top nav Starts from here -->
-        <section class="d-flex align-items-center section-top mt-1 mb-5">
+        <section id="take-me-to-top" class="d-flex align-items-center section-top mt-1 mb-5">
             <div class="dropdown section-top">
                 <button class="btn btn-secondary dropdown-toggle bg-white text-black border-0 fw-bold" type="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     All Categories</button>
                 <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">Action</button></li>
-                    <li><button class="dropdown-item" type="button">Another action</button></li>
-                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    <li><button class="dropdown-item" type="button">Mobile Phones</button></li>
+                    <li><button class="dropdown-item" type="button">Car</button></li>
+                    <li><button class="dropdown-item" type="button">Motorcycle</button></li>
+                    <li><button class="dropdown-item" type="button">House</button></li>
+                    <li><button class="dropdown-item" type="button">Video-Audio</button></li>
+                    <li><button class="dropdown-item" type="button">Tablets</button></li>
+                    <li><button class="dropdown-item" type="button">Land & Plots</button></li>
                 </ul>
             </div>
-            <a href="#">Mobile Phones</a>
-            <a href="#">Car</a>
-            <a href="#">Motorcycle</a>
-            <a href="#">House</a>
-            <a href="#">Video-Audio</a>
-            <a href="#">Tablets</a>
-            <a href="#">Land & Plots</a>
+            <div class="d-none d-md-flex d-lg-flex">
+                <a href="#">Mobile Phones</a>
+                <a href="#">Car</a>
+                <a href="#">Motorcycle</a>
+                <a href="#">House</a>
+                <a href="#">Video-Audio</a>
+                <a href="#">Tablets</a>
+                <a href="#">Land & Plots</a>
+            </div>
         </section>
         <!-- main's top nav Ends here -->
 
@@ -112,12 +124,12 @@
                 </div>
             </div>
         </section>
-        <!-- hero-1 Starts from here -->
+        <!-- hero-1 Ends here -->
 
 
 
         <!-- hero-2 Starts from here -->
-        <section class="hero2 my-4 d-flex justify-content-around flex-wrap py-4 gap-5">
+        <section class="hero2 row row-gap-5 column-gap-2 my-4 mx-4 mx-sm-0 mx-md-0 mx-lg-0 mb-5 py-4 pb-5">
             <div>
                 <img src="assets/asset 6.png">
                 <p class="fw-bolder">Mobiles</p>
@@ -174,94 +186,122 @@
             <div>
                 <img src="assets/asset 19.png">
                 <p class="fw-bolder">Kids</p>
+            </div>
         </section>
         <!-- hero-2 Ends from here -->
 
 
 
 
-        <!-- hero-3 Starts from here -->
+        <!-- Cards Starts from here -->
+        <!-- Seven Section -->
         <section class="pb-5">
-            <div class="d-flex justify-content-between align-items-center pb-2">
+            <div class="d-flex justify-content-between align-items-center pb-2 px-3 px-md-0 px-lg-0">
                 <h4 class="fw-bold">Mobile Phones</h4>
                 <a href="#" class="text-primary fw-bold">View More</a>
             </div>
-            <section class="d-flex justify-content-between">
-                <div class="card" style="width: 18rem;">
+
+            <section class="d-flex justify-content-between gap-3 overflow-x-scroll">
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/phone-1.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/phone-2.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/phone-3.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/nokia.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
-                        <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 100,000</p><i class="fa-regular fa-heart"></i>
+                        </span>
+                        <p class="card-text mb-1 fs-5">Nokia 3120 Classic</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
             </section>
         </section>
+
+
         <section class="pb-5">
-            <div class="d-flex justify-content-between align-items-center pb-2">
+            <div class="d-flex justify-content-between align-items-center pb-2 px-3 px-md-0 px-lg-0">
                 <h4 class="fw-bold">Cars</h4>
                 <a href="#" class="text-primary fw-bold">View More</a>
             </div>
-            <section class="d-flex justify-content-between">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/Tablet-3.jpg" class="card-img-top">
+
+            <section class="d-flex justify-content-between gap-3 overflow-x-scroll">
+                <div class="card col-6" style="width: 18rem;">
+                    <img src="assets/car1.png" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/phone-1.jpg" class="card-img-top">
+
+                <div class="card col-6" style="width: 18rem;">
+                    <img src="assets/car2.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/phone-1.jpg" class="card-img-top">
+
+                <div class="card col-6" style="width: 18rem;">
+                    <img src="assets/car3.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/phone-1.jpg" class="card-img-top">
+
+                <div class="card col-6" style="width: 18rem;">
+                    <img src="assets/car4.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
@@ -269,43 +309,57 @@
                 </div>
             </section>
         </section>
+
+
         <section class="pb-5">
-            <div class="d-flex justify-content-between align-items-center pb-2">
+            <div class="d-flex justify-content-between align-items-center pb-2 px-3 px-md-0 px-lg-0">
                 <h4 class="fw-bold">Bikes & Motorcycle</h4>
                 <a href="#" class="text-primary fw-bold">View More</a>
             </div>
-            <section class="d-flex justify-content-between">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/phone-1.jpg" class="card-img-top">
+
+            <section class="d-flex justify-content-between gap-3 overflow-x-scroll">
+                <div class="card col-6" style="width: 18rem;">
+                    <img src="assets/bike1.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/phone-1.jpg" class="card-img-top">
+
+                <div class="card col-6" style="width: 18rem;">
+                    <img src="assets/bike2.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/phone-1.jpg" class="card-img-top">
+
+                <div class="card col-6" style="width: 18rem;">
+                    <img src="assets/bike3.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/phone-1.jpg" class="card-img-top">
+
+                <div class="card col-6" style="width: 18rem;">
+                    <img src="assets/bike4.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
@@ -313,43 +367,57 @@
                 </div>
             </section>
         </section>
+
+
         <section class="pb-5">
-            <div class="d-flex justify-content-between align-items-center pb-2">
+            <div class="d-flex justify-content-between align-items-center pb-2 px-3 px-md-0 px-lg-0">
                 <h4 class="fw-bold">Houses</h4>
                 <a href="#" class="text-primary fw-bold">View More</a>
             </div>
-            <section class="d-flex justify-content-between">
-                <div class="card" style="width: 18rem;">
+
+            <section class="d-flex justify-content-between gap-3 overflow-x-scroll">
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/house-1.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/house-2.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/house-3.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/house-4.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
@@ -357,43 +425,57 @@
                 </div>
             </section>
         </section>
+
+
         <section class="pb-5">
-            <div class="d-flex justify-content-between align-items-center pb-2">
+            <div class="d-flex justify-content-between align-items-center pb-2 px-3 px-md-0 px-lg-0">
                 <h4 class="fw-bold">Videos & Audios</h4>
                 <a href="#" class="text-primary fw-bold">View More</a>
             </div>
-            <section class="d-flex justify-content-between">
-                <div class="card" style="width: 18rem;">
+
+            <section class="d-flex justify-content-between gap-3 overflow-x-scroll">
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/Screenshot 2025-08-05 222127.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/Screenshot 2025-08-05 222214.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/Screenshot 2025-08-05 222513.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/Screenshot 2025-08-05 222652.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
@@ -401,43 +483,57 @@
                 </div>
             </section>
         </section>
+
+
         <section class="pb-5">
-            <div class="d-flex justify-content-between align-items-center pb-2">
+            <div class="d-flex justify-content-between align-items-center pb-2 px-3 px-md-0 px-lg-0">
                 <h4 class="fw-bold">Tablets</h4>
                 <a href="#" class="text-primary fw-bold">View More</a>
             </div>
-            <section class="d-flex justify-content-between">
-                <div class="card" style="width: 18rem;">
+
+            <section class="d-flex justify-content-between gap-3 overflow-x-scroll">
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/Tablet-1.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/Tablet-2.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/Tablet-14jpg.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/Tablet-3.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
@@ -445,43 +541,57 @@
                 </div>
             </section>
         </section>
+
+
         <section class="pb-5">
-            <div class="d-flex justify-content-between align-items-center pb-2">
+            <div class="d-flex justify-content-between align-items-center pb-2 px-3 px-md-0 px-lg-0">
                 <h4 class="fw-bold">Land & Plots</h4>
                 <a href="#" class="text-primary fw-bold">View More</a>
             </div>
-            <section class="d-flex justify-content-between">
-                <div class="card" style="width: 18rem;">
+
+            <section class="d-flex justify-content-between gap-3 overflow-x-scroll">
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/land-1.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/land-2.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/land-3.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+
+                <div class="card col-6" style="width: 18rem;">
                     <img src="assets/land-4.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="fw-bold fs-4 mb-1">Rs 11,500</p>
+                        <span class="fw-bold d-flex justify-content-between align-items-center">
+                            <p class="fs-4 mb-1">Rs 11,500</p><i class="fa-regular fa-heart"></i>
+                        </span>
                         <p class="card-text mb-1 fs-5">Kawasaki Ninja h2</p>
                         <span class="d-block fw-lighter text-dark-emphasis">Islampure, Lahore</span>
                         <span class="fw-lighter text-dark-emphasis">2 Days ago</span>
@@ -490,30 +600,37 @@
             </section>
         </section>
     </main>
-    <!-- main Ends from here -->
+    <!-- main Ends here -->
 
 
     <!-- Footer Starts from here -->
-
     <footer>
-        <section class="f-s1 d-flex justify-content-between align-items-center">
-            <div class="d-sm-none d-md-block fw-bold fs-4 text-nowrap">
+        <!-- footer section #1 Starts from here -->
+        <section
+            class="f-s1 d-flex flex-column flex-sm-column flex-md-row flex-lg-row justify-md-content-between justify-content-lg-between align-items-center gap-5">
+
+            <!-- footer heading -->
+            <div class="d-sm-none d-md-block fw-bold fs-4 text-nowrap mt-2">
                 <p>Find amazing deals on the go.</p>
                 <span>Download OLX app now!</span>
             </div>
-            <div class="half-mobile-image">
+
+            <!-- footer half mobile image -->
+            <div class="w-100 half-mobile-image text-center mt-2">
                 <img src="assets/asset 21.webp">
             </div>
-            <div class="f-s1-store-logo d-flex">
-                <img src="assets/asset 22.svg">
-                <img src="assets/asset 23.svg">
-                <img src="assets/asset 24.svg">
+
+            <!-- footer online store Link or png -->
+            <div class="w-100 f-s1-store-logo row pb-5 d-flex justify-content-center">
+                <img class="col-4" src="assets/asset 22.svg">
+                <img class="col-4" src="assets/asset 23.svg">
+                <img class="col-4" src="assets/asset 24.svg">
             </div>
         </section>
 
 
-
-        <section class="f-s2 d-flex flex-column flex-md-row flex-lg-row">
+        <!-- footer section #2 Starts from here -->
+        <section class="f-s2 row">
             <div class="d-flex flex-column">
                 <h3>Popular Categories</h3>
                 <a>Cars</a>
@@ -545,7 +662,7 @@
             </div>
             <div class="f-s2-div5">
                 <h3>Follow Us</h3>
-                <div>
+                <div class="d-flex">
                     <a href="#"><img src="assets/asset 30.svg" alt="Twitter"></a>
                     <a href="#"><img src="assets/asset 31.svg" alt="Facebook"></a>
                     <a href="#"><img src="assets/asset 32.svg" alt="Youtube"></a>
@@ -554,22 +671,19 @@
             </div>
         </section>
 
-
-        <section class="f-s3 d-flex justify-content-end">
-            <span class="fw-bold">Classifieds in Pakistan.</span>
-            <p>&nbsp © 2006 – 2025 OLX</p>
+        <!-- footer section #3 Starts from here -->
+        <section
+            class="f-s3 d-flex flex-column flex-md-row flex-lg-row justify-content-md-center justify-content-lg-end align-items-center text-center">
+            <span class="fw-bold pt-3">Classifieds in Pakistan.</span>
+            <p class="pt-md-4 pt-lg-4 mt-md-2 mt-lg-2">&nbsp &nbsp © 2006 – 2025 OLX</p>
         </section>
     </footer>
-    <!-- Footer Ends from here -->
+    <!-- Footer Ends here -->
 
 
 
     <!-- Back to top button -->
-
-    <a hre2="#olx-white-bg" class="navigate2top-btn position-fixed fw-bold">Back to top</a>
-
-
-
+    <a href="#take-me-to-top" class="navigate2top-btn position-fixed z-3 fw-bold">Back to top</a>
 
 
 
